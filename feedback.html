@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./feedback.css">
+    <link rel="stylesheet" href="./bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <style>
+      input{
+          width: 300px;
+          box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+          border: 1px white solid;
+          border-left: 10px gray solid;
+      }
+      #feedback{
+          height: 80px;
+          border-radius: 3rem 0 0 0 ;
+      }
+      input:hover{
+        border-left: 10px black solid;
+      }
+      th:hover{
+        color: black !important;
+        background-color: skyblue !important;
+      }
+  </style>
+    <title>JMS-feedback</title>
+</head>
+<body>
+    <div class="container text-center">
+        <h2 class="container">Feedback</h2>
+    <form class="container" style="margin-top: 80px;" >
+      <div><label>Full Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" id="name" placeholder="Enter your full name"></div>
+      <br>
+      <div><label>Department &nbsp;&nbsp;</label><input type="text" id="department" placeholder="Enter your department"></div>
+      <br>
+      <div><label>Register No &nbsp;&nbsp;</label><input type="text" id="regno" placeholder="Enter your register number"></div>
+      <br>
+      <div><label>Email Id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="email" id="email" placeholder="Enter your email id"></div>
+      <br>
+      <div><label>Feedback </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="feedback" placeholder="Enter your feedback"> <br>
+        <br>
+         </div>
+      <br>
+    </form>
+    <button class="btn btn-success" style="margin-left: 80px;"  onclick="addtable()">ADD Feedback</button>
+
+    <!--table feedback-->
+    <table id="newt" class="table table-bordered  " style="margin-top: 30px; border: 2px black solid;">
+      <div class="col ">
+        <th class="text-center bg-primary text-white" style=" border: 2px black solid;">Name</th>
+        <th class="text-center bg-primary text-white" style=" border: 2px black solid;">Department</th>
+        <th class="text-center bg-primary text-white" style=" border: 2px black solid;">Register No</th>
+        <th class="text-center bg-primary text-white" style=" border: 2px black solid;">Email Id</th>
+        <th class="text-center col-md-3 bg-primary text-white" style=" border: 2px black solid;">Feedback</th>
+        <th class="text-center bg-primary text-white" style=" border: 2px black solid;">Changes</th>
+  
+       <tr id="datar" style=" border: 2px black solid;">
+          <td id="tn" style=" border: 2px black solid;"></td>
+          <td id="td" style=" border: 2px black solid;"></td>
+          <td id="tr" style=" border: 2px black solid;"></td>
+          <td id="te" style=" border: 2px black solid;"></td>
+          <td id="tf" class="col-md-3" style=" border: 2px black solid;"></td>
+        <td ><a href="feedbackthanks.html" class="btn btn-warning" style=" border: 2px black solid;">Save</a></td>
+       </tr>
+  
+    
+      </div>
+      
+    </table>
+   
+ </div>
+ </div>
+ <script src="./feedback.js"></script>
+</body>
+</html>
